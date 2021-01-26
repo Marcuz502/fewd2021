@@ -1,68 +1,56 @@
-Body{
-    Background-color:white;
-
-}
-h1
-{
-    color:white;
-    text-align: center; font-family: fantasy;
-
-
-}
-h2{ color:white; text-align: center;
-
-
+body {
+	line-height: 1.6;
+	color: #3a3a3a;
 }
 
-h3{color:white;text-align: center; font-family: fantasy;
-
-}
-P{ color:white;
-    text-align: center;
-font-size: 17px;
-font-family: fantasy
+a {
+	color: #fff;
+	text-decoration: none;
 }
 
-.image1 {text-align: center; padding: ;
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	margin: 0;
+	text-align: center;
+	font-family:sans-serif;
+}
+
+/* ---- Layout Containers ---- */
+
+.wrapper {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.main-header {
+	background:blue;
+	padding: 10px;
+	margin: 15px;
+	text-align: center;
+}
+
+.main-footer {
+	padding: 2em 0;
+	background: #d9e4ea;
 
 }
 
-
-ul{ text-align: center;
-    color:black;
-
-
-}
-.wrapper{width: 1170px;
-    margin:0 auto;
+/* ---- Page Elements ---- */
+ .main-nav li{
+	 display:inline-block;
+	 width: auto;
+	 padding:40px;
 
 }
 
-header{
-    height:110px;
-    background:black;
-    width: 100%;
-    text-family:cursive
+.main-nav  {
+  display: inline-block;
+ padding:10px;
+ margin:10px;
 
- position:fixed;
 }
-
-
-   .navbar{
-       display: flex;
-       justify-content: space-around;
-       align-items: center; min-height: 8vh;
-
-
-   }
-
-   .link2{color: black;
-
-   }
-
-  .logo{text-align: left;color: white; font-family:fantasy; font-size: 20;
-  }
-
-
-
-    body{background-image: url(astronaut-1784245_1920.jpg);
