@@ -1,6 +1,6 @@
 body {
 	line-height: 1.6;
-	color: black;
+	color: white;
 	background-color: orange;
 }
 
@@ -38,7 +38,9 @@ a {
 
 .main-footer {
 	padding: 2em 0;
-	background: black;
+	background:black;
+	text-decoration-color: white;
+
 
 
 }
