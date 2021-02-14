@@ -1,6 +1,7 @@
 body {
 	line-height: 1.6;
-	color: #3a3a3a;
+	color: black;
+	background-color: orange;
 }
 
 a {
@@ -17,18 +18,19 @@ a {
 .name {
 	margin: 0;
 	text-align: center;
-	font-family:sans-serif;
+	font-family:fantasy;
 }
 
 /* ---- Layout Containers ---- */
 
 .wrapper {
-	width: 70%;
-	margin: 0 auto;
+	width: 100%;
+	hight:20%;
+	margin:15%;
 }
 
 .main-header {
-	background:blue;
+	background:black;
 	padding: 10px;
 	margin: 15px;
 	text-align: center;
@@ -36,7 +38,8 @@ a {
 
 .main-footer {
 	padding: 2em 0;
-	background: #d9e4ea;
+	background: black;
+
 
 }
 
@@ -52,5 +55,78 @@ a {
   display: inline-block;
  padding:10px;
  margin:10px;
+
+}
+/*************************
+Media Queries
+*************************/
+
+@media only screen and (min-width: 480px) {
+
+  main-nav {
+    float: left;
+    width: 30%;
+    margin: 0 0 0 5%;
+    padding: 25px 1%;
+    margin-bottom: 0;
+  }
+
+  main-nav li:Kart County a {
+    margin-left: 0;
+  }
+
+  main-nav li:Bar&Grill a {
+    margin-right: 0;
+  }
+
+}
+
+@media only screen and (min-width: 768px),
+       only screen and (min-width: 700px) and (orientation: landscape) {
+
+  title {
+    float: left;
+    font-size: 1.4em;
+  }
+
+  main-nav {
+    float: right;
+    width: 60%;
+  }
+
+  main-nav a {
+    padding: 15px 1%;
+  }
+
+  .main article {
+    float: left;
+    width: 57%;
+  }
+
+  .main aside {
+    float: right;
+    width: 38%;
+  }
+
+}
+
+@media only screen and (min-width: 1140px) {
+
+  .wrapper {
+    width: 1026px;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 2em;
+  }
+
+  main-nav a {
+    padding: 25px 1%;
+  }
+
+}
+
+
 
 }
