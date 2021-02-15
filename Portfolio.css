@@ -1,7 +1,11 @@
 body {
 	line-height: 1.6;
+<<<<<<< HEAD
 	color: white;
 	background-color: orange;
+=======
+	color: black;
+>>>>>>> 67f125b8d36e09196069937b08dab9e659c17bdd
 }
 
 a {
