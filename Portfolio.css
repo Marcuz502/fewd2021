@@ -4,7 +4,7 @@ body {
 	color: white;
 	background-color: orange;
 =======
-	color: black;
+	color: whit;
 >>>>>>> 67f125b8d36e09196069937b08dab9e659c17bdd
 }
 
@@ -21,22 +21,25 @@ a {
 
 .name {
 	margin: 0;
-	text-align: center;
-	font-family:fantasy;
+	text-align: left;
+	font-family:sans-serif;
+	font-style:italic;
+	font-size: 15px;
+
 }
 
 /* ---- Layout Containers ---- */
 
 .wrapper {
 	width: 100%;
-	hight:20%;
-	margin:15%;
+	hight:50%;
+	margin:30%;
 }
 
 .main-header {
 	background:black;
-	padding: 10px;
-	margin: 15px;
+	padding: 120px;
+	margin: 110px;
 	text-align: center;
 }
 
@@ -51,16 +54,20 @@ a {
 
 /* ---- Page Elements ---- */
  .main-nav li{
-	 display:inline-block;
-	 width: auto;
-	 padding:40px;
+	 display:inline;
+	 width:auto;
+	 padding:10px;
+
+
 
 }
 
 .main-nav  {
-  display: inline-block;
+display: inline-flex;
  padding:10px;
- margin:10px;
+ margin:0px;
+text-align:left;
+position: absolute;
 
 }
 /*************************
