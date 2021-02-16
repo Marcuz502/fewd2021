@@ -1,18 +1,36 @@
 body {
+
 	line-height: 1.6;
-<<<<<<< HEAD
 	color: white;
 	background-color: orange;
-=======
-	color: whit;
->>>>>>> 67f125b8d36e09196069937b08dab9e659c17bdd
+	font-family: sans-serif;
 }
 
 a {
-	color: #fff;
-	text-decoration: none;
+	color: orange;
+	font-family: fantasy;
+	text-decoration:none;
 }
 
+P{ font-family: sans-serif;
+margin: 5%;
+}
+
+h2{
+	margin: 5%;
+	font-family: italic;
+}
+
+h3{margin: 5%;
+	font-family: italic;
+
+}
+
+article{
+	margin: 5%;
+	font-family: sans-serif;
+
+}
 /* =================================
   Base Layout Styles
 ==================================== */
@@ -22,9 +40,9 @@ a {
 .name {
 	margin: 0;
 	text-align: left;
-	font-family:sans-serif;
+	font-family:fantasy;
 	font-style:italic;
-	font-size: 15px;
+	font-size: 25px;
 
 }
 
@@ -32,19 +50,18 @@ a {
 
 .wrapper {
 	width: 100%;
-	hight:50%;
-	margin:30%;
+	margin:5%. 0;
 }
 
 .main-header {
 	background:black;
-	padding: 120px;
-	margin: 110px;
+	padding: 50px;
+	margin: 0px;
 	text-align: center;
 }
 
 .main-footer {
-	padding: 2em 0;
+	padding: 70px;
 	background:black;
 	text-decoration-color: white;
 
@@ -70,76 +87,81 @@ text-align:left;
 position: absolute;
 
 }
-/*************************
-Media Queries
-*************************/
+ img {max-width: 1000px;
+	    max-height:1000px;
+			width: 1200px;
+			height: 400px;
+			margin: 115px;
+ }
+/* =================================================
+ Media Queries
+==================================================== */
 
-@media only screen and (min-width: 480px) {
+/
 
-  main-nav {
-    float: left;
-    width: 30%;
-    margin: 0 0 0 5%;
-    padding: 25px 1%;
+
+@media (max-width: 575px) {
+  header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  .name {
     margin-bottom: 0;
   }
-
-  main-nav li:Kart County a {
-    margin-left: 0;
+  nav a {
+    padding: 6px 0;
+    background: #def1f9;
+    margin: .2em 0;
   }
-
-  main-nav li:Bar&Grill a {
-    margin-right: 0;
+  img {
+    display: none;
   }
-
 }
 
-@media only screen and (min-width: 768px),
-       only screen and (min-width: 700px) and (orientation: landscape) {
+/* Target viewport sizes 576px and wider */
 
-  title {
+@media (min-width: 576px) {
+  .name {
     float: left;
-    font-size: 1.4em;
   }
-
-  main-nav {
-    float: right;
-    width: 60%;
+  nav {
+    margin-top: 24px;
   }
-
-  main-nav a {
-    padding: 15px 1%;
+  nav li {
+    display: inline-block;
+    margin: 0 0.45em;
   }
+  h2 {
+    margin-bottom: 1.5em;
+  }
+}
 
-  .main article {
+/* Target a viewport range wider than 575px and narrower than 992px */
+
+@media (min-width: 576px) and (max-width: 991px) {
+  nav {
     float: left;
-    width: 57%;
+    margin-left: 20px;
   }
+}
 
-  .main aside {
+/* Target viewport sizes 768px and wider */
+
+@media (min-width: 768px) {
+  .article {
+    float: left;
+    width: 65%;
+  }
+  aside {
     float: right;
-    width: 38%;
+    width: 30%;
   }
-
 }
 
-@media only screen and (min-width: 1140px) {
+/* Target viewport sizes 992px and wider */
 
-  .wrapper {
-    width: 1026px;
-    margin: 0 auto;
+@media (min-width: 992px) {
+  nav {
+    float: right;
   }
-
-  .title {
-    font-size: 2em;
-  }
-
-  main-nav a {
-    padding: 25px 1%;
-  }
-
-}
-
-
-
 }
